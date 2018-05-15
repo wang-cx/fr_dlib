@@ -5,13 +5,13 @@ import numpy as np
 from . import utils
 
 face_detector = dlib.cnn_face_detection_model_v1(
-    "/Users/administrator/workspace/AI_models/dlib/mmod_human_face_detector.dat")
+    "/home/wcx/Documents/mmod_human_face_detector.dat")
 
 face_shape_predictor = dlib.shape_predictor(
-    "/Users/administrator/workspace/AI_models/dlib/shape_predictor_5_face_landmarks.dat")
+    "/home/wcx/Documents/shape_predictor_5_face_landmarks.dat")
 
 face_descriptor = dlib.face_recognition_model_v1(
-    "/Users/administrator/workspace/AI_models/dlib/dlib_face_recognition_resnet_model_v1.dat")
+    "/home/wcx/Documents/dlib_face_recognition_resnet_model_v1.dat")
 
 
 def detect_faces(im):
